@@ -1,12 +1,6 @@
 ## HOLA 👋
-
-<!--
-**AsadSaidi/AsadSaidi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
 - 🔭 Visionrio ...
 - 🌱 Aprendiendo a programar ...
 - 🤔 Pensando en hacer 5M€ ...
 - ⚡ Fun fact: Me gusta el te x2...
--->
+  
