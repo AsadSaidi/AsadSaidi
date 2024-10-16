@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/e2258413-06a2-4585-8031-237566bbb70e)
-
+![Uploading image.png…]()
 ## HOLA 👋
 - :star: 19 years old...
 - 🌱 Aprendiendo a programar ...
