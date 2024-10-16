@@ -1,9 +1,8 @@
 
 # HOLA, soy Asad👋
 - :star: 19 years old...
-- 🌱 Just starting ...
+- :house: Barcelona, Spain
 - 💻 Learning how to program --> Kotlin, XML, HTML, CSS, JavaScript
 - 🎓 ESO, Bachillerato 
-- :house: Barcelona, Spain
-- :shipit: Objective: find vinland...
+
   
