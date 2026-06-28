@@ -2,6 +2,6 @@
 - :star: 21 years old...
 - :house: Barcelona, Spain
 - 💻 Kotlin, JavaScript, PHP, SQL, MongoDB, React.JS, Vue.js
-- 🎓 ESO, Bachillerato 
+- 🎓 ESO, Bachillerato, DAW
 
   
