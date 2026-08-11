@@ -2,6 +2,34 @@
 
 Registro de cambios, más reciente arriba.
 
+## 2026-08-11 — Ajuste: bloque de envío/garantías sin duplicados
+
+Feedback del propietario sobre el bloque bajo el botón de compra: repetía
+información que ya estaba en las etiquetas de abajo.
+
+- `snippets/buy-buttons.liquid`: eliminada la línea "Envío con seguimiento
+  incluido" (ya la cubre la etiqueta "Seguimiento 24/7"). Las dos frases de
+  garantía dejan de ser texto con ✓ y pasan a **etiquetas** con las mismas
+  clases `.tablet` / `.tablet-container` del bloque de badges existente, para
+  que compartan estilo si se retoca. Se mantiene la línea de entrega estimada.
+- `templates/product.json` (bloque `custom_liquid_pb6kXy`): eliminada la
+  etiqueta "Garantía de 30 días", que quedaba duplicada por la nueva
+  "Garantía de devolución de 30 días" justo encima. Fila final de etiquetas:
+  Garantía de devolución 30 días · Desistimiento 14 días · Envío rápido ·
+  Seguimiento 24/7.
+- `snippets/buy-buttons.liquid`: corregido el flex de la línea de entrega, que
+  partía el texto en trozos sueltos ("Recíbelo entre el / 17 de agosto / y el
+  / 20 de agosto"). Ahora fluye en dos líneas normales con las fechas en negrita
+  sin cortarse.
+
+Nota: el bloque `custom_liquid_wMwVVA` (recuadro "Garantía de devolución de
+30 días" con punto animado) está `disabled: true` y no se renderiza ni en live
+ni en dev — no era una tercera repetición.
+
+Regresión verificada tras el cambio (375px): hero above-the-fold ✓ · Pack 2
+preseleccionado 24,99 € ✓ · sticky añade Negro/Pack 2 ✓ · entrega 17–20 agosto ✓
+· etiquetas correctas ✓ · sección espuma ✓.
+
 ## 2026-08-11 — Sesión 2 (cont.): implementación completa en tema dev
 
 Desbloqueado el acceso (egreso + `SHOPIFY_FLAG_STORE` corregidos por el
