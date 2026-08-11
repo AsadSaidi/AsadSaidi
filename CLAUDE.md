@@ -41,8 +41,20 @@ la publicación es siempre manual tras revisión del propietario.
 - El Shopify CLI con token Theme Access enruta TODO por
   `theme-kit-access.shopifyapps.com` — ese host debe estar permitido en la
   política de egreso del entorno, además de `x0gchz-0n.myshopify.com`.
+- ⚠️ En este entorno remoto el CLI necesita `NODE_USE_ENV_PROXY=1` y
+  `NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt` (el fetch nativo de Node
+  ignora HTTPS_PROXY); sin eso da el error engañoso "don't have access to
+  this dev store". El `read ECONNRESET` final tras cada comando es solo la
+  telemetría bloqueada — inofensivo.
+- Copia de trabajo del tema: `/home/user/clyren-theme` (repo git local propio,
+  fuera del repo de docs).
 - Seguridad: el token fue pegado en un chat en algún momento →
   **regenerarlo al terminar el proyecto**.
+
+## Tema de desarrollo
+- **"CLYREN PDP v2 (dev)"** (id `186409550160`), duplicado no publicado del
+  live con todos los cambios de la sesión 2026-08-11.
+- Preview: `https://clyren.store/products/clyren-clean-brush-core-sin-mango?preview_theme_id=186409550160`
 
 ## Restricción legal absoluta en el copy
 PROHIBIDO: "elimina bacterias", "antibacteriano", "mata gérmenes",
